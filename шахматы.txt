@@ -1,0 +1,20 @@
+import Foundation
+func shes(letter: String, number: Int) {
+if letter == "A" || letter == "C" || letter == "Е" || letter == "G"   {
+    if number >= 1 && number <= 8  {
+            if number % 2 == 1 {
+            print("black")
+            } else { print("white") }
+        } else { print("error") }
+    } else if letter == "B" || letter == "D" || letter == "F" || letter == "H" {
+        if number >= 1 && number <= 8  {
+            if number % 2 != 1 {
+            print("black")
+            } else { print("white") }
+        } else { print("error") }        
+    } else { print("ошибка") }
+}
+
+
+
+var x = shes(letter:"B", number: 7)
